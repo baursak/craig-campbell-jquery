@@ -1,3 +1,11 @@
-$(function(){
-    $("p").not("#second").css("color", "#f00");
+$(function () {
+    $(".close-btn").click(function () {
+        $(".slider").slideUp();
+    });
+    $(".open-btn").click(function () {
+        $(".slider").slideDown();
+    });
+    $(".toggle-btn").click(function () {
+        $(".slider").slideToggle();
+    });
 });
